@@ -7,7 +7,7 @@ function About() {
   return (
     <div>
       {/* Profile and Intro */}
-      <div className='mt-20 flex items-center justify-center'>
+      <div className='mt-32 flex items-center justify-center'>
         <img src={pfp} className='w-60 h-60 border-4 border-[#FFFA8D] rounded-full' />
         <div className='border-r-2 rounded-3xl p-6 border-[#6FE6FC]'>
           <h1 className='text-4xl font-serif font-bold text-[#4ED7F1]'>Hello!</h1>
@@ -98,6 +98,10 @@ function About() {
           
 
         </ul>
+      </div>
+      <div className='mt-10'>
+      <h1 className='text-4xl font-serif font-bold text-[#15194a] text-center'>EDUCATION</h1>
+
       </div>
     </div>
   )
