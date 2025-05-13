@@ -20,6 +20,7 @@ function App() {
     <>
       {shownavbar && <Navbar />} {/* Render Navbar based on state */}
       <Approutes />
+      
     </>
   );
 }
