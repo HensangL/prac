@@ -2,7 +2,9 @@ import React from 'react'
 
 function Recent() {
   return (
-    <div>Recent</div>
+    <div>
+        School website
+    </div>
   )
 }
 
