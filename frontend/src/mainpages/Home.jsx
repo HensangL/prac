@@ -6,6 +6,7 @@ import twitter from '../image/twitter.png';
 import Maincontent from '../Maincontent';
 import Recent from '../Recent';
 import Qualification from '../Qualification'; // Assuming you have this component
+import background from '../image/back.jpg'; // Your background image
 
 function Home() {
   const [activesection, setactivesection] = useState('main'); // Default to 'main'
@@ -13,10 +14,13 @@ function Home() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div
-        style={{
-          background: 'linear-gradient(45deg, #333, #f43f5e, #7e22ce, #4338ca)',
-          backgroundSize: '400% 400%',
-          animation: 'gradientShift 10s ease infinite',
+      style={{
+            background: ` url(${background})`, // Blend the gradient and the image
+            backgroundSize: '100% 100%', // This will stretch the background image to fill the space
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat', // Ensures the image doesn't repeat
+          
+         
         }}
         className="border-2 w-[600px] rounded-3xl h-auto flex flex-col"
       >
@@ -31,7 +35,7 @@ function Home() {
 
         {/* Navbar */}
         <nav className="bg-white/20 p-2 rounded-t-3xl backdrop-blur-lg">
-          <ul className="flex gap-10 items-center">
+          <ul className="flex gap-40 items-center">
             <li>
               <img
                 src={logo}
@@ -40,17 +44,20 @@ function Home() {
                 onClick={() => setactivesection('main')} // Reset to Maincontent when logo is clicked
               />
             </li>
-            <li className="mt-2 text-white font-semibold hover:text-pink-400 transition-colors duration-300 cursor-pointer">
+            <li className="mt-2 text-white font-semibold hover:text-black hover:pointer-coarse: transition-colors duration-300 cursor-pointer">
               <button onClick={() => setactivesection('recent')}>Recent works</button>
             </li>
-            <li className="mt-2 text-white font-semibold hover:text-pink-400 transition-colors duration-300 cursor-pointer">
+            <li className="mt-2 text-white font-semibold hover:text-black hover:pointer-coarse: transition-colors duration-300 cursor-pointer">
               <button onClick={() => setactivesection('qualification')}>Qualifications</button>
             </li>
           </ul>
         </nav>
 
         {/* Main content box */}
-        <div className="bg-white/10 m-4 p-4 rounded-xl overflow-y-auto h-80 w-[90%] mx-auto backdrop-blur-md text-white">
+        <div
+          className="m-4 rounded-xl overflow-y-auto h-80 w-[90%] mx-auto  text-white"
+          
+        >
           {activesection === 'recent' && <Recent />}
           {activesection === 'qualification' && <Qualification />}
           {activesection === 'main' && <Maincontent />}
@@ -59,9 +66,15 @@ function Home() {
         {/* Footer */}
         <footer className="bg-[#7532b4] text-center py-2 rounded-b-3xl text-sm text-gray-200">
           <div className="flex justify-center gap-10">
-            <a href="https://www.facebook.com/hensang.lama"><img src={facebook} className="w-10 rounded-full border-2 border-fuchsia-100" /></a>
-            <a href="https://www.instagram.com/hensanglama/"><img src={instagram} className="w-10 rounded-full border-2 border-fuchsia-100" /></a>
-            <a href="https://x.com/HensangL"><img src={twitter} className="w-10 rounded-full border-2 border-fuchsia-100" /></a>
+            <a href="https://www.facebook.com/hensang.lama">
+              <img src={facebook} className="w-10 rounded-full border-2 border-fuchsia-100" />
+            </a>
+            <a href="https://www.instagram.com/hensanglama/">
+              <img src={instagram} className="w-10 rounded-full border-2 border-fuchsia-100" />
+            </a>
+            <a href="https://x.com/HensangL">
+              <img src={twitter} className="w-10 rounded-full border-2 border-fuchsia-100" />
+            </a>
           </div>
         </footer>
       </div>
