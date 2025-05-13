@@ -6,12 +6,12 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="bg-gradient-to-r from-blue-800 to-indigo-600 p-4  shadow-lg">
+      <nav className="bg-gradient-to-r from-blue-800 to-indigo-600 p-7  shadow-lg">
         <ul className="w-full flex justify-between items-center">
           <li>
             <Link
               to="/"
-              className="text-white text-lg font-semibold hover:text-pink-400 transition-colors duration-300"
+              className= " ml-1 text-white text-lg font-semibold hover:text-blackb hover:bg-white hover:rounded-2xl  hover:p-1 hover:text-black "
             >
               Home
             </Link>
@@ -19,7 +19,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/about"
-              className="text-white text-lg font-semibold hover:text-pink-400 transition-colors duration-300"
+              className="text-white text-lg font-semibold  hover:text-blackb hover:bg-white hover:rounded-2xl  hover:p-1 hover:text-black"
             >
               About
             </Link>
@@ -27,7 +27,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/contact"
-              className="text-white text-lg font-semibold hover:text-pink-400 transition-colors duration-300"
+              className="text-white text-lg font-semibold hover:text-blackb hover:bg-white hover:rounded-2xl  hover:p-1 hover:text-black"
             >
               Contact
             </Link>
