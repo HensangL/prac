@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import pfp from '../image/ichigo.jpg'
-
+import education from '../image/education.png'
 function About() {
   const [popupType, setPopupType] = useState(null); // 'email', 'phone', 'github'
 
@@ -99,10 +99,50 @@ function About() {
 
         </ul>
       </div>
-      <div className='mt-10'>
-      <h1 className='text-4xl font-serif font-bold text-[#15194a] text-center'>EDUCATION</h1>
+      <div className="mt-10 ml-125 w-175 px-4 p-10 bg-[#ffff00] border-2 rounded-2xl flex flex-col md:flex-row gap-5">
+  {/* Left Side: Education Details */}
+  <div className="flex flex-col flex-grow">
+    <h1 className="text-4xl md:text-6xl font-serif font-bold text-[#15194a] text-center mb-6">
+      EDUCATION
+    </h1>
 
+    {/* Tribeni */}
+    <div className="flex justify-between items-start gap-4 mb-3 flex-wrap">
+      <div className="text-[#1219aa] text-lg">
+        <h2 className="text-xl font-semibold font-mono">Tribeni Higher Secondary School</h2>
+        <p className="text-md font-mono">SLC</p>
       </div>
+      <p className="text-lg font-mono">2073–2075</p>
+    </div>
+
+    {/* Vishwa Adarsha */}
+    <div className="flex justify-between items-start gap-4 mb-3 flex-wrap">
+      <div className="text-[#1219aa] text-lg">
+        <h2 className="text-xl font-semibold font-mono">Vishwa Adarsha College</h2>
+        <p className="text-md font-mono">+2</p>
+      </div>
+      <p className="text-lg font-mono">2075–2077</p>
+    </div>
+
+    {/* Central Campus */}
+    <div className="flex justify-between items-start gap-4 flex-wrap">
+      <div className="text-[#1219aa] text-lg">
+        <h2 className="text-xl font-semibold font-mono">Central Campus of Technology</h2>
+        <p className="text-md font-mono">Bachelor in Information Technology</p>
+      </div>
+      <p className="text-lg font-mono">2077–</p>
+    </div>
+  </div>
+
+  {/* Right Side: Image */}
+  <img
+    src={education}
+    alt="Education Illustration"
+    className="w-36  h-40 mt-20 rotate-[15deg]"
+  />
+</div>
+
+
     </div>
   )
 }
