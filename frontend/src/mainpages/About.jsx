@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import pfp from '../image/ichigo.jpg'
 import education from '../image/education.png'
+import bbg from '../image/bbg.jpg'
 function About() {
   const [popupType, setPopupType] = useState(null); // 'email', 'phone', 'github'
 
   return (
-    <div>
+    <div className='py-20'
+    style={{ backgroundImage: `url(${bbg})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
       {/* Profile and Intro */}
-      <div className='mt-32 flex items-center justify-center'>
+      <div className=' flex items-center justify-center'>
         <img src={pfp} className='w-60 h-60 border-4 border-[#FFFA8D] rounded-full' />
         <div className='border-r-2 rounded-3xl p-6 border-[#6FE6FC]'>
           <h1 className='text-4xl font-serif font-bold text-[#4ED7F1]'>Hello!</h1>

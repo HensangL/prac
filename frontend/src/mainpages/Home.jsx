@@ -7,12 +7,14 @@ import Maincontent from '../Maincontent';
 import Recent from '../Recent';
 import Qualification from '../Qualification';
 import background from '../image/back.jpg';
-
+import bbg from '../image/bbg.jpg'
 function HomePage() {
   const [activesection, setactivesection] = useState('main');
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div
+      style={{ backgroundImage: `url(${bbg})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
+    className="flex items-center justify-center min-h-screen bg-gray-100">
       <div
         className="border-2 w-[600px] rounded-3xl h-auto flex flex-col bg-no-repeat bg-center bg-cover bg-fixed"
         style={{ backgroundImage: `url(${background})` }}
