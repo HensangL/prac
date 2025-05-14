@@ -99,7 +99,7 @@ function About() {
 
         </ul>
       </div>
-      <div className="mt-10 ml-125 w-175 px-4 p-10 bg-[#ffff00] border-2 rounded-2xl flex flex-col md:flex-row gap-5">
+<div className="mt-10 ml-125 w-175 px-4 p-10 bg-[#ffff00] rounded-2xl flex flex-col md:flex-row gap-5 shadow-2xl shadow-black/30">
   {/* Left Side: Education Details */}
   <div className="flex flex-col flex-grow">
     <h1 className="text-4xl md:text-6xl font-serif font-bold text-[#15194a] text-center mb-6">
