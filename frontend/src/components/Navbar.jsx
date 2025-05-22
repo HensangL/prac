@@ -22,7 +22,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link
+           <Link
             to="/contact"
             className="text-white text-lg font-semibold px-4 py-2 rounded-2xl hover:bg-white hover:text-indigo-900 transition-colors duration-300"
           >
