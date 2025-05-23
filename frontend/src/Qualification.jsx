@@ -2,11 +2,11 @@ import React from 'react';
 
 function Qualification() {
   return (
-    <div className="p-6 bg-gray-900 min-h-screen">
-      <div className="flex flex-col md:flex-row gap-12">
+    <div>
+      <div className="flex flex-col md:flex-row gap-40 ml-10">
         <div>
-          <h1 className="text-yellow-400 text-3xl font-semibold mb-4">Technical skills</h1>
-          <ul className="ml-4 list-disc text-white space-y-2">
+          <h1 className="text-yellow-400 text-xl font-semibold mb-2">Technical skills</h1>
+          <ul className="ml-4 list-disc text-white space-y-1 text-sm">
             <li>React.js</li>
             <li>Tailwind CSS</li>
             <li>JavaScript (ES6+)</li>
@@ -18,8 +18,8 @@ function Qualification() {
           </ul>
         </div>
         <div>
-          <h1 className="text-yellow-400 text-3xl font-semibold mb-4">Soft skills</h1>
-          <ul className="ml-4 list-disc text-white space-y-2">
+          <h1 className="text-yellow-400 text-xl font-semibold mb-2">Soft skills</h1>
+          <ul className="ml-4 list-disc text-white space-y-1 text-sm">
             <li>Problem-solving</li>
             <li>Team Collaboration</li>
             <li>Quick Learning</li>
